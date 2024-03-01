@@ -15,26 +15,26 @@ int main() {
     SplayTree splay_tree;
     RBTree rb_tree;
 
-    string is1d1 = "../data/data/insert/set1/data_1.txt";
-    string is1d2 = "../data/data/insert/set1/data_2.txt";
-    string is1d3 = "../data/data/insert/set1/data_3.txt";
-    string is2d1 = "../data/data/insert/set2/data_1.txt";
-    string is2d2 = "../data/data/insert/set2/data_2.txt";
-    string is2d3 = "../data/data/insert/set2/data_3.txt";
+    string is1d1 = "data/data/insert/set1/data_1.txt";
+    string is1d2 = "data/data/insert/set1/data_2.txt";
+    string is1d3 = "data/data/insert/set1/data_3.txt";
+    string is2d1 = "data/data/insert/set2/data_1.txt";
+    string is2d2 = "data/data/insert/set2/data_2.txt";
+    string is2d3 = "data/data/insert/set2/data_3.txt";
 
-    string ss1d1 = "../data/data/search/set1/data_1.txt";
-    string ss1d2 = "../data/data/search/set1/data_2.txt";
-    string ss1d3 = "../data/data/search/set1/data_3.txt";
-    string ss2d1 = "../data/data/search/set2/data_1.txt";
-    string ss2d2 = "../data/data/search/set2/data_2.txt";
-    string ss2d3 = "../data/data/search/set2/data_3.txt";
+    string ss1d1 = "data/data/search/set1/data_1.txt";
+    string ss1d2 = "data/data/search/set1/data_2.txt";
+    string ss1d3 = "data/data/search/set1/data_3.txt";
+    string ss2d1 = "data/data/search/set2/data_1.txt";
+    string ss2d2 = "data/data/search/set2/data_2.txt";
+    string ss2d3 = "data/data/search/set2/data_3.txt";
 
-    string ds1d1 = "../data/data/delete/set1/data_1.txt";
-    string ds1d2 = "../data/data/delete/set1/data_2.txt";
-    string ds1d3 = "../data/data/delete/set1/data_3.txt";
-    string ds2d1 = "../data/data/delete/set2/data_1.txt";
-    string ds2d2 = "../data/data/delete/set2/data_2.txt";
-    string ds2d3 = "../data/data/delete/set2/data_3.txt";
+    string ds1d1 = "data/data/delete/set1/data_1.txt";
+    string ds1d2 = "data/data/delete/set1/data_2.txt";
+    string ds1d3 = "data/data/delete/set1/data_3.txt";
+    string ds2d1 = "data/data/delete/set2/data_1.txt";
+    string ds2d2 = "data/data/delete/set2/data_2.txt";
+    string ds2d3 = "data/data/delete/set2/data_3.txt";
 
     string current_insert_file = is1d1;
     string current_search_file = ss1d1;
