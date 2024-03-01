@@ -81,17 +81,12 @@ int main() {
     insert_file.close();
     
     auto bst_insertion_end_time = chrono::high_resolution_clock::now();
-    auto bst_insertion_duration_cast = chrono::duration_cast<chrono::nanoseconds>(bst_insertion_end_time - bst_insertion_start_time);
+    auto bst_insertion_duration_cast = chrono::duration_cast<chrono::microseconds>(bst_insertion_end_time - bst_insertion_start_time);
 
     /*
     =============Search===============
     */
     // ifstream data_file(current_search_file);
-
-    if (!insert_file.is_open()) {
-        std::cerr << "Unable to open bst search file\n";
-        return 1;
-    }
 
     auto bst_search_start_time = chrono::high_resolution_clock::now();
     
@@ -108,7 +103,7 @@ int main() {
     }
     search_file.close();
     auto bst_search_end_time = chrono::high_resolution_clock::now();
-    auto bst_search_duration_cast = chrono::duration_cast<chrono::nanoseconds>(bst_search_end_time - bst_search_start_time);
+    auto bst_search_duration_cast = chrono::duration_cast<chrono::microseconds>(bst_search_end_time - bst_search_start_time);
 
     /*
     =============Deletion===============
@@ -128,7 +123,7 @@ int main() {
     }
     delete_file.close();
     auto bst_delete_end_time = chrono::high_resolution_clock::now();
-    auto bst_delete_duration_cast = chrono::duration_cast<chrono::nanoseconds>(bst_delete_end_time - bst_delete_start_time);
+    auto bst_delete_duration_cast = chrono::duration_cast<chrono::microseconds>(bst_delete_end_time - bst_delete_start_time);
 
 
     /*
@@ -156,7 +151,7 @@ int main() {
     insert_file.close();
     
     auto splay_tree_insertion_end_time = chrono::high_resolution_clock::now();
-    auto splay_tree_insertion_duration_cast = chrono::duration_cast<chrono::nanoseconds>(splay_tree_insertion_end_time - splay_tree_insertion_start_time);
+    auto splay_tree_insertion_duration_cast = chrono::duration_cast<chrono::microseconds>(splay_tree_insertion_end_time - splay_tree_insertion_start_time);
 
     /*
     =============Search===============
@@ -179,7 +174,7 @@ int main() {
     search_file.close();
     
     auto splay_tree_search_end_time = chrono::high_resolution_clock::now();
-    auto splay_tree_search_duration_cast = chrono::duration_cast<chrono::nanoseconds>(splay_tree_search_end_time - splay_tree_search_start_time);
+    auto splay_tree_search_duration_cast = chrono::duration_cast<chrono::microseconds>(splay_tree_search_end_time - splay_tree_search_start_time);
 
     /*
     =============Deletion===============
@@ -202,7 +197,7 @@ int main() {
     delete_file.close();
     
     auto splay_tree_delete_end_time = chrono::high_resolution_clock::now();
-    auto splay_tree_delete_duration_cast = chrono::duration_cast<chrono::nanoseconds>(splay_tree_delete_end_time - splay_tree_delete_start_time);
+    auto splay_tree_delete_duration_cast = chrono::duration_cast<chrono::microseconds>(splay_tree_delete_end_time - splay_tree_delete_start_time);
     
 
     /*
@@ -230,7 +225,7 @@ int main() {
     insert_file.close();
     
     auto rb_tree_insert_end_time = chrono::high_resolution_clock::now();
-    auto rb_tree_insert_duration_cast = chrono::duration_cast<chrono::nanoseconds>(rb_tree_insert_end_time - rb_tree_insert_start_time);
+    auto rb_tree_insert_duration_cast = chrono::duration_cast<chrono::microseconds>(rb_tree_insert_end_time - rb_tree_insert_start_time);
 
     /*
     =============Search===============
@@ -253,7 +248,7 @@ int main() {
     search_file.close();
     
     auto rb_tree_search_end_time = chrono::high_resolution_clock::now();
-    auto rb_tree_search_duration_cast = chrono::duration_cast<chrono::nanoseconds>(rb_tree_search_end_time - rb_tree_search_start_time);
+    auto rb_tree_search_duration_cast = chrono::duration_cast<chrono::microseconds>(rb_tree_search_end_time - rb_tree_search_start_time);
 
     /*
     =============Delete===============
@@ -276,19 +271,19 @@ int main() {
     delete_file.close();
     
     auto rb_tree_delete_end_time = chrono::high_resolution_clock::now();
-    auto rb_tree_delete_duration_cast = chrono::duration_cast<chrono::nanoseconds>(rb_tree_delete_end_time - rb_tree_delete_start_time);
+    auto rb_tree_delete_duration_cast = chrono::duration_cast<chrono::microseconds>(rb_tree_delete_end_time - rb_tree_delete_start_time);
 
-    cout << "BST insertion time: " << bst_insertion_duration_cast.count() << " in nanoseconds " << endl;
-    cout << "BST search time: " << bst_search_duration_cast.count() << " in nanoseconds " << endl;
-    cout << "BST deletion time: " << bst_delete_duration_cast.count() << " in nanoseconds " << endl;
+    cout << "BST insertion time: " << bst_insertion_duration_cast.count() << " in microseconds " << endl;
+    cout << "BST search time: " << bst_search_duration_cast.count() << " in microseconds " << endl;
+    cout << "BST deletion time: " << bst_delete_duration_cast.count() << " in microseconds " << endl;
     cout << endl;
-    cout << "Splay Tree insertion time: " << splay_tree_insertion_duration_cast.count() << " in nanoseconds " << endl;
-    cout << "Splay Tree search time: " << splay_tree_search_duration_cast.count() << " in nanoseconds " << endl;
-    cout << "Splay Tree deletion time: " << splay_tree_delete_duration_cast.count() << " in nanoseconds " << endl;
+    cout << "Splay Tree insertion time: " << splay_tree_insertion_duration_cast.count() << " in microseconds " << endl;
+    cout << "Splay Tree search time: " << splay_tree_search_duration_cast.count() << " in microseconds " << endl;
+    cout << "Splay Tree deletion time: " << splay_tree_delete_duration_cast.count() << " in microseconds " << endl;
     cout << endl;
-    cout << "RB Tree insertion time: " << rb_tree_insert_duration_cast.count() << " in nanoseconds " << endl;
-    cout << "RB Tree search time: " << rb_tree_search_duration_cast.count() << " in nanoseconds " << endl;
-    cout << "RB Tree deletion time: " << rb_tree_delete_duration_cast.count() << " in nanoseconds " << endl;
+    cout << "RB Tree insertion time: " << rb_tree_insert_duration_cast.count() << " in microseconds " << endl;
+    cout << "RB Tree search time: " << rb_tree_search_duration_cast.count() << " in microseconds " << endl;
+    cout << "RB Tree deletion time: " << rb_tree_delete_duration_cast.count() << " in microseconds " << endl;
 
     return 0;
 }
