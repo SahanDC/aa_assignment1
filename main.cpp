@@ -36,9 +36,9 @@ int main() {
     string ds2d2 = "data/data/delete/set2/data_2.txt";
     string ds2d3 = "data/data/delete/set2/data_3.txt";
 
-    string current_insert_file = is1d1;
-    string current_search_file = ss1d1;
-    string current_delete_file = ds1d1;
+    string current_insert_file = is2d1;
+    string current_search_file = ss2d1;
+    string current_delete_file = ds2d1;
 
     /*
     ====================================================================BST====================================================================
